@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 50vh;
+        }
+
+        div {
+            position: relative;
+            height: 200px;
+            width: 200px;
+            background-color: brown;
+            animation: Rotate 5s infinite;
+        }
+
+        @keyframes Rotate {
+            0% {
+                top: 0px;
+                left: 0px;
+                background: rgb(81, 164, 220);
+                transform: rotate(0deg);
+            }
+
+            25% {
+                top: 0px;
+                left: 200px;
+                background: rgb(81, 220, 144);
+                transform: rotate(90deg);
+            }
+
+            50% {
+                top: 200px;
+                left: 200px;
+                background: rgb(229, 216, 34);
+                transform: rotate(180deg);
+            }
+
+            75% {
+                top: 200px;
+                left: 0px;
+                background: rgb(229, 34, 213);
+                transform: rotate(270deg);
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+                background: rgb(187, 20, 20);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div></div>
+
+</body>
+
+</html>

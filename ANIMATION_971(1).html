@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: relative;
+            height: 200px;
+            width: 200px;
+            background-color: brown;
+            animation: Rotate 5s infinite;
+        }
+
+        @keyframes Rotate {
+            0% {
+                background: forestgreen;
+                top: 0px;
+                left: 0px;
+                transform: rotate(0deg);
+                /* transition: 0.2ms; */
+                /* transition: 0.2ms; */
+            }
+
+            20% {
+                background-color: rgb(180, 132, 132);
+                top: 200px;
+                left: 200px;
+                /* transition: 0.2ms; */
+                transform: rotate(0deg);
+            }
+
+            40% {
+                background-color: rgb(18, 5, 60);
+                top: 400px;
+                left: 500px;
+                transition: 0.2ms;
+                transform: rotate(0deg);
+            }
+
+
+            60% {
+                background-color: red;
+                top: 400px;
+                left: 500px;
+                transform: rotate(1800deg);
+                transition: 0.2ms;
+            }
+
+            80% {
+                background-color: purple;
+                top: 200px;
+                left: 800px;
+                transform: rotate(1800deg);
+            }
+
+            100% {
+                background-color: red;
+                top: 0;
+                left: 1000px;
+                transform: rotate(1800deg);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
